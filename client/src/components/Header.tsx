@@ -27,24 +27,24 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <Link href="/">
-            <a className="flex items-center">
+            <div className="flex items-center">
               <img src={logoSrc} alt="mquotient Logo" className="h-10" />
-            </a>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href}>
-                <a
-                  className={`font-medium transition ${
+                <div
+                  className={`font-medium transition cursor-pointer ${
                     isActive(item.href)
                       ? "text-primary"
                       : "text-secondary-dark hover:text-primary"
                   }`}
                 >
                   {item.label}
-                </a>
+                </div>
               </Link>
             ))}
           </nav>
@@ -61,8 +61,8 @@ export default function Header() {
               <div className="flex flex-col space-y-6 mt-8">
                 {navItems.map((item) => (
                   <Link key={item.href} href={item.href}>
-                    <a
-                      className={`text-lg font-medium transition ${
+                    <div
+                      className={`text-lg font-medium transition cursor-pointer ${
                         isActive(item.href)
                           ? "text-primary"
                           : "text-secondary-dark hover:text-primary"
@@ -70,7 +70,7 @@ export default function Header() {
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.label}
-                    </a>
+                    </div>
                   </Link>
                 ))}
               </div>

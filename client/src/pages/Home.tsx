@@ -148,9 +148,9 @@ export default function Home() {
                       ))}
                     </ul>
                     <Link href={`/services#${service.id}`}>
-                      <a className="text-primary font-medium inline-flex items-center hover:text-primary-dark transition">
+                      <div className="text-primary font-medium inline-flex items-center hover:text-primary-dark transition cursor-pointer">
                         Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                      </a>
+                      </div>
                     </Link>
                   </CardContent>
                 </Card>
@@ -200,10 +200,10 @@ export default function Home() {
                   </h3>
                   <p className="text-secondary mb-4">{solution.description}</p>
                   <Link href={`/solutions#${solution.id}`}>
-                    <a className="text-primary font-medium inline-flex items-center hover:text-primary-dark transition">
+                    <div className="text-primary font-medium inline-flex items-center hover:text-primary-dark transition cursor-pointer">
                       Explore solution{" "}
                       <ArrowRight className="ml-2 h-4 w-4" />
-                    </a>
+                    </div>
                   </Link>
                 </CardContent>
               </Card>

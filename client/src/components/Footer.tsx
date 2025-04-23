@@ -18,13 +18,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <Link href="/">
-              <a className="block mb-6">
+              <div className="block mb-6 cursor-pointer">
                 <img
                   src={logoSrc}
                   alt="mquotient Logo"
                   className="h-10 brightness-0 invert"
                 />
-              </a>
+              </div>
             </Link>
             <p className="text-gray-300 mb-6">
               Empowering businesses through innovative technology solutions that
@@ -68,9 +68,9 @@ export default function Footer() {
               {services.slice(0, 6).map((service) => (
                 <li key={service.id}>
                   <Link href={`/services#${service.id}`}>
-                    <a className="text-gray-300 hover:text-white transition">
+                    <div className="text-gray-300 hover:text-white transition cursor-pointer">
                       {service.title}
-                    </a>
+                    </div>
                   </Link>
                 </li>
               ))}
@@ -83,9 +83,9 @@ export default function Footer() {
               {solutions.slice(0, 6).map((solution) => (
                 <li key={solution.id}>
                   <Link href={`/solutions#${solution.id}`}>
-                    <a className="text-gray-300 hover:text-white transition">
+                    <div className="text-gray-300 hover:text-white transition cursor-pointer">
                       {solution.title}
-                    </a>
+                    </div>
                   </Link>
                 </li>
               ))}
@@ -97,44 +97,44 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/about">
-                  <a className="text-gray-300 hover:text-white transition">
+                  <div className="text-gray-300 hover:text-white transition cursor-pointer">
                     About Us
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link href="/case-studies">
-                  <a className="text-gray-300 hover:text-white transition">
+                  <div className="text-gray-300 hover:text-white transition cursor-pointer">
                     Case Studies
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link href="/#testimonials">
-                  <a className="text-gray-300 hover:text-white transition">
+                  <div className="text-gray-300 hover:text-white transition cursor-pointer">
                     Testimonials
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <a className="text-gray-300 hover:text-white transition">
+                  <div className="text-gray-300 hover:text-white transition cursor-pointer">
                     Blog
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <a className="text-gray-300 hover:text-white transition">
+                  <div className="text-gray-300 hover:text-white transition cursor-pointer">
                     Careers
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
-                  <a className="text-gray-300 hover:text-white transition">
+                  <div className="text-gray-300 hover:text-white transition cursor-pointer">
                     Contact
-                  </a>
+                  </div>
                 </Link>
               </li>
             </ul>
