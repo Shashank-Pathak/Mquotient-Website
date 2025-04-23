@@ -310,9 +310,9 @@ export default function Home() {
                     {caseStudy.description}
                   </p>
                   <Link href={`/case-studies#${caseStudy.id}`}>
-                    <a className="text-primary font-medium inline-flex items-center hover:text-primary-dark transition">
+                    <div className="text-primary font-medium inline-flex items-center hover:text-primary-dark transition cursor-pointer">
                       Read case study <ArrowRight className="ml-2 h-4 w-4" />
-                    </a>
+                    </div>
                   </Link>
                 </CardContent>
               </Card>
